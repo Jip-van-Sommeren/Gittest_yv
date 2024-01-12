@@ -1,0 +1,40 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid;
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.game {
+    display: flex;
+}
+
+
+.column:hover .box {
+    border-color: aqua;
+}
+
+.box:hover{
+    border-color: blue !important;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.filled {
+    background-color: blue;
+}
+
+.game__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}

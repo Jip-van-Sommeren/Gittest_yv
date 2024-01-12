@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4 op een rij</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let arrayOfArrays = [];
+
+        for (let i = 0; i < 6; i++) {
+            arrayOfArrays[i] = [];
+            for (let j = 0; j < 7; j++) {
+                arrayOfArrays[i][j] = false;
+            }
+        }
+        console.log(arrayOfArrays)
+
+        function clickedColumn(elem){
+            console.log(elem.children[0].id)
+            for (let i=elem.children.length-1;i>-1;i--){
+                console.log(elem.children[i].classList)
+                if (!elem.children[i].classList.contains("filled")){
+                    elem.children[i].classList.add("filled");
+                    break;
+                }
+            }
+            togglePlayer();
+        }
+        function reloadPage() {
+            window.location.reload();
+        }
+        let player = "red";
+
+        function togglePlayer() {
+            togglePlayer === 'red' ? 'yellow' : 'red';
+}
+        
+    </script>
+</head>
+<body>
+    <div class="game__wrapper">
+        <div class="game">
+            <div class="column" id="1" onclick="clickedColumn(this)">
+                <div class="box" id="row6"></div>
+                <div class="box" id="row5"></div>
+                <div class="box" id="row4"></div>
+                <div class="box" id="row3"></div>
+                <div class="box" id="row2"></div>
+                <div class="box" id="row1"></div>
+            </div>
+            <div class="column" id="2" onclick="clickedColumn(this)">
+                <div class="box" id="row6"></div>
+                <div class="box" id="row5"></div>
+                <div class="box" id="row4"></div>
+                <div class="box" id="row3"></div>
+                <div class="box" id="row2"></div>
+                <div class="box" id="row1"></div>
+            </div>
+            <div class="column" id="3" onclick="clickedColumn(this)">
+                <div class="box" id="row6"></div>
+                <div class="box" id="row5"></div>
+                <div class="box" id="row4"></div>
+                <div class="box" id="row3"></div>
+                <div class="box" id="row2"></div>
+                <div class="box" id="row1"></div>
+            </div>
+            <div class="column" id="4" onclick="clickedColumn(this)">
+                <div class="box" id="row6"></div>
+                <div class="box" id="row5"></div>
+                <div class="box" id="row4"></div>
+                <div class="box" id="row3"></div>
+                <div class="box" id="row2"></div>
+                <div class="box" id="row1"></div>
+            </div>
+            <div class="column" id="5" onclick="clickedColumn(this)">
+                <div class="box" id="row6"></div>
+                <div class="box" id="row5"></div>
+                <div class="box" id="row4"></div>
+                <div class="box" id="row3"></div>
+                <div class="box" id="row2"></div>
+                <div class="box" id="row1"></div>
+            </div>
+            <div class="column" id="6" onclick="clickedColumn(this)">
+                <div class="box" id="row6"></div>
+                <div class="box" id="row5"></div>
+                <div class="box" id="row4"></div>
+                <div class="box" id="row3"></div>
+                <div class="box" id="row2"></div>
+                <div class="box" id="row1"></div>
+            </div>
+            <div class="column" id="7" onclick="clickedColumn(this)">
+                <div class="box" id="row6"></div>
+                <div class="box" id="row5"></div>
+                <div class="box" id="row4"></div>
+                <div class="box" id="row3"></div>
+                <div class="box" id="row2"></div>
+                <div class="box" id="row1"></div>
+            </div>
+            </div>
+        
+        
+            <button onclick="reloadPage()">Reload Page</button>
+        
+    </div>
+   
+
+  
+    
+</body>
+</html>

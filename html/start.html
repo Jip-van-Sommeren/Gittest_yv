@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Display</title>
+    <script>
+        function displayText() {
+            // Getting the value from the input field
+            var inputText = document.getElementById("inputText").value;
+
+            // Displaying the text in the box below
+            document.getElementById("displayText").innerText = inputText;
+        }
+    </script>
+</head>
+<body>
+    <h2>Input and Display Text</h2>
+    
+    <!-- Text input field -->
+    <input type="text" id="inputText" placeholder="Enter text here">
+
+    <!-- Submit button to trigger JavaScript function -->
+    <button onclick="displayText()">Submit</button>
+
+    <!-- Box to display the text -->
+    <div id="displayText" style="margin-top: 20px; border: 1px solid black; padding: 10px;">
+        Text will be displayed here
+    </div>
+</body>
+</html>
